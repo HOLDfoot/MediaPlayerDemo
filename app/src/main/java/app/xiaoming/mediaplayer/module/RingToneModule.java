@@ -8,6 +8,8 @@ import android.net.Uri;
 import android.view.View;
 import android.widget.Button;
 
+import app.xiaoming.mediaplayer.R;
+
 /**
  * Author    ZhuMingren
  * Date      2019/4/9
