@@ -22,6 +22,8 @@ import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import app.xiaoming.mediaplayer.module.RingToneModule;
+
 public class MainActivity extends AppCompatActivity {
     
     TextView tvPlay;
@@ -51,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        new RingToneModule(this);
+        
         tvPlay = findViewById(R.id.tv_play);
         btnRecord = findViewById(R.id.btn_record);
         tvPlay.setOnClickListener(new View.OnClickListener() {
