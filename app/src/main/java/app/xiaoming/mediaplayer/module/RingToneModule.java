@@ -5,6 +5,7 @@ import android.content.Context;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -36,6 +37,7 @@ public class RingToneModule {
     private void startAlarm(Context context) {
         Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         if (notification == null) return;
+        Log.d("zmr", "startAlarm notification not null");
         Ringtone r = RingtoneManager.getRingtone(context, notification);
         r.play();
     }
